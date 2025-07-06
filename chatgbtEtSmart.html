@@ -1,0 +1,309 @@
+<style>
+  .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .w-100 {
+    width: 100%;
+     
+  }
+
+  .w-50 {
+    width: 100%;
+  }
+
+  .w-50-l {
+    width: 50%;
+  }
+
+  .w-100-l {
+    width: 100%;
+  }
+
+  .db {
+    display: block;
+  }
+
+  .db-l {
+    display: block;
+  }
+
+  .dn {
+    display: none;
+  }
+
+  .dn-l {
+    display: none;
+  }
+
+  .no-underline {
+    text-decoration: none;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .absolute {
+    position: absolute;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bottom-0 {
+    bottom: 0;
+  }
+
+  .bottom-custom {
+    bottom: -6px;
+  }
+
+  .ma3-ns {
+    margin: 1rem;
+  }
+
+  .mv3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .mr2 {
+    margin-right: 1rem;
+  }
+
+  .ml2 {
+    margin-left: 1rem;
+  }
+
+  .br-15 {
+    border-radius: 15px;
+  }
+
+  .bloc-actus--imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bloc-actus--imgdesk,
+  .bloc-actus--imgmob {
+    background: #f4f4f4;
+  }
+
+  #actuFour .bloc-actus--imgmob,
+  #actuOne .bloc-actus--imgmob {
+    aspect-ratio: 36 / 17;
+  }
+
+  #actuThree .bloc-actus--imgmob,
+  #actuTwo .bloc-actus--imgmob {
+    aspect-ratio: 1 / 1;
+  }
+
+  
+  @media screen and (min-width: 62em) {
+    .db-l {
+      display: block;
+    }
+
+    .dn-l {
+      display: none;
+    }
+
+    .w-100-l {
+      width: 100%;
+    }
+
+    .w-50-l {
+      width: 50%;
+    }
+
+    #actuOne .bloc-actus--imgdesk {
+      aspect-ratio: auto;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 15px;
+      display: block !important;
+    }
+
+    #actuTwo .bloc-actus--imgdesk,
+    #actuThree .bloc-actus--imgdesk,
+    #actuFour .bloc-actus--imgdesk,
+    #actuFive .bloc-actus--imgdesk {
+      aspect-ratio: auto;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 15px;
+      display: block !important;
+    }
+
+    .bloc-actus--imgs {
+      gap: 15px;
+    }
+
+
+    .w-100.flex {
+      gap: 15px;
+    }
+
+   
+    #actuTwo a,
+    #actuThree a,
+    #actuFour a,
+    #actuFive a {
+      margin: 0 !important;
+    }
+
+  
+    .w-100.flex:last-child {
+      margin-top: 15px; 
+    }
+  }
+
+ 
+  @media all and (max-width: 991.9px) {
+    .bloc-actus--imgs {
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    #actuOne {
+      width: 100% !important;
+      margin-bottom: 1rem !important;
+    }
+
+    #actuOne .bloc-actus--imgdesk {
+      display: none !important;
+    }
+
+    #actuOne .bloc-actus--imgmob {
+      display: block !important;
+      width: 100% !important;
+      height: 300px !important;
+      object-fit: cover !important;
+      border-radius: 5px;
+    }
+
+    #actuOne + .w-100.w-50-l {
+      display: block;
+      width: 100% !important;
+    }
+
+    #actuOne + .w-100.w-50-l > .w-100.flex {
+      display: flex !important;
+      flex-direction: row !important;
+      gap: 15px;
+      margin-bottom: 1rem !important;
+    }
+
+    #actuTwo,
+    #actuThree,
+    #actuFour,
+    #actuFive {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+
+    #actuTwo .bloc-actus--imgdesk,
+    #actuThree .bloc-actus--imgdesk,
+    #actuFour .bloc-actus--imgdesk,
+    #actuFive .bloc-actus--imgdesk {
+      display: none !important;
+    }
+
+    #actuTwo .bloc-actus--imgmob,
+    #actuThree .bloc-actus--imgmob,
+    #actuFour .bloc-actus--imgmob,
+    #actuFive .bloc-actus--imgmob {
+      display: block !important;
+      width: 100% !important;
+      height: 140px !important;
+      object-fit: cover !important;
+      border-radius: 15px;
+    }
+
+    #actuTwo > a,
+    #actuThree > a,
+    #actuFour > a,
+    #actuFive > a {
+      margin: 0 !important;
+    }
+  }
+</style>
+
+<div id="containerActus" class="bloc-actus--container mh4-m mh3 mv3 mv5-ns">
+  <div class="bloc-actus--imgs">
+
+    <div id="actuOne" class="w-100 w-50-l" data-actu="0">
+      <a class="no-underline db relative bloc-actus br-15" href="https://aiwr.ma/collections/smart-watches">
+        <img data-nolazy="" class="bloc-actus--imgdesk w-100 db-l dn br-15"
+          src="https://cdn.shopify.com/s/files/1/0651/3704/9715/files/Aiwr_Principale.png?v=1750530259"
+          alt="Promos de sortie, printemps réussi !" />
+        <img data-nolazy="" class="bloc-actus--imgmob db dn-l w-100 br-15"
+          src="https://cdn.shopify.com/s/files/1/0651/3704/9715/files/Aiwr_Principale.png?v=1750530259"
+          alt="Promos de sortie, printemps réussi !" />
+        <div class="bloc-actus--text w-100-l w-50 absolute center bottom-0"></div>
+      </a>
+    </div>
+
+    <div class="w-100 w-50-l">
+
+      <div class="w-100 flex">
+        <div id="actuTwo" class="w-50" data-actu="0">
+          <a class="no-underline db relative bloc-actus br-15 ma3-ns mv3 mr2" href="https://aiwr.ma/products/aiwr-orbit">
+            <img data-nolazy="" class="bloc-actus--imgdesk w-100 db-l dn br-15"
+              src="https://cdn.shopify.com/s/files/1/0651/3704/9715/files/Aiwr_Orbit.png?v=1750530291"
+              alt="Mobilier de jardin" />
+            <img data-nolazy="" class="bloc-actus--imgmob db dn-l w-100 br-15"
+              src="https://cdn.shopify.com/s/files/1/0651/3704/9715/files/Aiwr_Orbit.png?v=1750530291"
+              alt="Mobilier de jardin" />
+            <div class="bloc-actus--text w-100 absolute center bottom-custom"></div>
+          </a>
+        </div>
+
+        <div id="actuThree" class="w-50" data-actu="0">
+          <a class="no-underline db relative bloc-actus br-15 ma3-ns mv3 ml2" href="https://aiwr.ma/products/aiwr-peps-1r">
+            <img data-nolazy="" class="bloc-actus--imgdesk w-100 db-l dn br-15"
+              src="https://cdn.shopify.com/s/files/1/0651/3704/9715/files/Aiwr_peps1r.png?v=17505302822"
+              alt="Outillage de jardin" />
+            <img data-nolazy="" class="bloc-actus--imgmob db dn-l w-100 br-15"
+              src="https://cdn.shopify.com/s/files/1/0651/3704/9715/files/Aiwr_peps1r.png?v=1750530282"
+              alt="Outillage de jardin" />
+            <div class="bloc-actus--text w-100 absolute center bottom-custom"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="w-100 flex">
+        <div id="actuFour" class="w-50" data-actu="0">
+          <a class="no-underline db bloc-actus relative br-15 ma3-ns mv3" href="https://aiwr.ma/products/aiwr-peps-1s">
+            <img data-nolazy="" class="bloc-actus--imgdesk w-100 db-l dn br-15"
+              src="https://cdn.shopify.com/s/files/1/0651/3704/9715/files/Aiwr_peps1s.png?v=1750530270" alt="Bricolage" />
+            <img data-nolazy="" class="bloc-actus--imgmob db dn-l w-100 br-15"
+              src="https://cdn.shopify.com/s/files/1/0651/3704/9715/files/Aiwr_peps1s.png?v=1750530270" alt="Bricolage" />
+            <div class="bloc-actus--text absolute w-50-l w-100"></div>
+          </a>
+        </div>
+
+        <div id="actuFive" class="w-50" data-actu="0">
+          <a class="no-underline db bloc-actus relative br-15 ma3-ns mv3 ml2" href="https://aiwr.ma/products/aiwr-cynex">
+            <img data-nolazy="" class="bloc-actus--imgdesk w-100 db-l dn br-15"
+              src="https://cdn.shopify.com/s/files/1/0651/3704/9715/files/Aiwr_Cynex.png?v=1750530296" alt="Décoration de jardin" />
+            <img data-nolazy="" class="bloc-actus--imgmob db dn-l w-100 br-15"
+              src="https://cdn.shopify.com/s/files/1/0651/3704/9715/files/Aiwr_Cynex.png?v=1750530296" alt="Décoration de jardin" />
+            <div class="bloc-actus--text absolute w-50-l w-100"></div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
