@@ -1,0 +1,43 @@
+<style> 
+
+  .image-hover-effect-livraison {
+    display: block;
+    max-width: 1800px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    -webkit-tap-highlight-color: transparent; 
+    -webkit-touch-callout: none;             
+    user-select: none;                        
+    touch-action: manipulation;               
+  }
+
+  .image-mobile {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .image-desktop {
+      display: none;
+    }
+
+    .image-mobile {
+      display: block;
+     
+    }
+
+   
+  }
+</style>
+
+<img 
+  src="https://cdn.shopify.com/s/files/1/0651/3704/9715/files/Main_Div_-_Desktop.png?v=1753353794"
+  alt="Delivery Desktop" 
+  class="image-hover-effect-livraison image-desktop"
+/>
+
+<img 
+  src="https://cdn.shopify.com/s/files/1/0651/3704/9715/files/Main_Div_-_Phone.png?v=1753353786" 
+  alt="Delivery Mobile" 
+  class="image-hover-effect-livraison image-mobile"
+/>
